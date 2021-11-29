@@ -36,3 +36,40 @@ Padding(
                                                  border: InputBorder.none      )    )  ),),
                                                    );
 ```
+### **Model Class**
+#### How to create a blueprint/model class
+```
+class PopularFood {
+      String imageUrl;
+        String name;
+        double rating;
+        int reviews;  
+        double price;  
+PopularFood({
+    this.imageUrl,    
+    this.name,    
+    this.rating,    
+    this.reviews,    
+    this.price
+        });
+    }
+List<PopularFood> popularfooditems = [  
+    PopularFood(
+            imageUrl: \"assets/images/omelette.jpg\",
+            name: \"Omelette\",
+            rating: 3.9,
+            reviews: 276,
+            price: 70  ),
+    PopularFood(
+            imageUrl: \"assets/images/maggi.jpg\",
+            name: \"Maggi\",
+            rating: 4.2,
+            reviews: 351,
+            price: 40  ),
+    PopularFood(
+            imageUrl: \"assets/images/pasta.jpg\",
+            name: \"Red Suace pasta\",
+            rating: 2.6,
+            reviews: 115,
+            price: 120  )];
+```
