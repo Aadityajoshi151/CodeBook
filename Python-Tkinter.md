@@ -27,3 +27,11 @@ if __name__ == "__main__":
 mybutton = ttk.Button(root,text="Hello World",state=DISABLED,padx=50,pady=50,command=functionname,fg="blue")
 mybutton.pack()
 ```
+### **Custom Messagebox**
+```
+custommessagebox = Toplevel()
+custommessagebox.attributes(\"-toolwindow\", True)
+'''
+removes icon,minimize,maximize buttons from window". It is just a top level window. The content inside the  messagebox is made same as normal tkinter.
+'''
+```
